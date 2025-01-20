@@ -1,0 +1,219 @@
+.mainDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(245, 69, 69);
+    flex-direction: column;
+    gap: 59px;
+   
+  }
+  
+  .firstDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 2px;
+    font-family: "Roboto Mono", serif;
+   
+  }
+  .title{
+    font-size: 50px;
+    background-color: #ff9393;
+    color: white;
+    padding: 2px 51px;
+    border-radius: 7px;
+    font-family: "Roboto Mono", serif;
+}
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color:  #FFC107;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 54px;
+    font-weight: bold;
+    cursor: poRoboto Mono;
+    border-radius: 7px;
+    border: none;
+    color:#6f6f6f;
+    font-family: "Roboto Mono", serif;
+   
+  }
+
+  .playerChoice {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: "Roboto Mono", serif;
+  }
+  
+  .playerChoice button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: poRoboto Mono;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    font-family: "Roboto Mono", serif;
+  }
+  
+  .playerChoice button:hover {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+  }
+
+  .restartButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: poRoboto Mono;
+    background-color: #694b49; /* Red */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border-radius: 6px;
+    font-weight: 500;
+    font-family: "Roboto Mono", serif;
+  }
+  
+  .restartButton:hover {
+    
+    background-color: #51290b;
+    color: #ffffff;
+    border: 2px solid #694b49;
+   
+  }
+
+  .finalResult{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(129, 129, 129);
+    color: white;
+    position: absolute;
+    z-index: 10;
+    top: -40%;
+    animation: winner 2s  3s forwards;
+    animation-play-state: paused;
+    /* border-radius: 5px;
+    border: 1px solid white;
+    font-size: 28px; */
+    font-family: "Roboto Mono", serif;
+  }
+  @keyframes winner {
+    0%{
+      top: -40%;
+    }
+    100%{
+      top: 40%;
+    }
+  }
+
+  @media (max-width: 450px) {
+  .title {
+      font-size: 24px;
+      background-color: blueviolet;
+      padding: 5px 30px;
+    }
+    .playerChoice{
+      flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+    }
+    .playerChoice button{
+      border-radius: 5px;
+      font-size: 15px
+    }
+    .score h1{
+      color: white;
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width:700px) {
+    .firstDiv {
+      display: grid;
+      grid-template-columns: repeat(3, 160px);
+      grid-template-rows: repeat(3, 160px);
+      gap: 2px;
+     
+    }
+    .box{
+      width: 160px;
+      height: 160px;
+    }
+    .score h1{
+      color: white;
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width:700px) {
+    .firstDiv {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 2px;
+     
+    }
+    .box{
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media (max-width:350px) {
+    .firstDiv {
+      display: grid;
+      grid-template-columns: repeat(3, 70px);
+      grid-template-rows: repeat(3, 70px);
+      gap: 2px;
+     
+    }
+    .box{
+      width: 70px;
+      height: 70px;
+      font-size: 24px;
+    }
+    .score h1{
+      color: white;
+      font-size: 18px;
+    }
+  }
+
+  .score{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "Roboto Mono", serif;
+  }
+  .score h1{
+    color: white;
+    font-family: "Roboto Mono", serif;
+  }
+
+  
