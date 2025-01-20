@@ -109,7 +109,7 @@
     color: white;
     position: absolute;
     z-index: 10;
-    top: -40%;
+    top: -60%;
     animation: winner 2s  3s forwards;
     animation-play-state: paused;
     /* border-radius: 5px;
